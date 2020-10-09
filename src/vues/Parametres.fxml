@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ParametresController">
+   <children>
+      <Label layoutX="182.0" layoutY="79.0" text="Mise à jour du profil" textFill="#ab5050" underline="true">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="190.0" layoutY="155.0" prefHeight="105.0" prefWidth="497.0" style="-fx-border-color: #908383;" AnchorPane.leftAnchor="190.0">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="120.0" prefWidth="292.0">
+               <children>
+                  <Label text="Votre nom complet :" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nomUtilisateur" text="Inconnu">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="10.0" top="8.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="194.0" layoutY="336.0" prefHeight="67.0" prefWidth="489.0" style="-fx-border-color: #908383;">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/folder.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="92.0" prefWidth="374.0">
+               <children>
+                  <Label text="Repertoire de téléchargement par défaut:" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="repertoireTelechargement" strokeType="OUTSIDE" strokeWidth="0.0" text="C:">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="changerRepertoire" mnemonicParsing="false" onAction="#changerRepertoire" text="Changer">
+                     <VBox.margin>
+                        <Insets left="130.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="8.0" left="10.0" top="8.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="terminer" layoutX="402.0" layoutY="505.0" mnemonicParsing="false" onAction="#changerParametres" text="Terminer" />
+   </children>
+</AnchorPane>

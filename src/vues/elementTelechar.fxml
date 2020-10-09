@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ElementTelecharController">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Downloads_48px.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="72.0" prefWidth="810.0">
+         <children>
+            <Text fx:id="nomFichier" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du fichier" wrappingWidth="777.6708984375" />
+            <AnchorPane prefHeight="34.0" prefWidth="788.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text fx:id="nomExpe" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de l'expéditeur" wrappingWidth="397.6708984375">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tailleFichier" layoutX="484.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille du fichier" wrappingWidth="297.6708984375">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PrincipalController">
+   <children>
+      <VBox prefHeight="698.0" prefWidth="154.0" style="-fx-background-color: #333333;">
+         <children>
+            <ImageView fitHeight="124.0" fitWidth="153.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="connexion" accessibleRole="BUTTON" onMouseClicked="#choisirVue" prefHeight="85.0" prefWidth="154.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="63.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User%20Groups_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="telechargement" accessibleRole="BUTTON" onMouseClicked="#choisirVue" prefHeight="82.0" prefWidth="154.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="63.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Downloading%20Updates_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="envoi" accessibleRole="BUTTON" onMouseClicked="#choisirVue" prefHeight="87.0" prefWidth="154.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="63.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Upload_52px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="amis" accessibleRole="BUTTON" onMouseClicked="#choisirVue" prefHeight="84.0" prefWidth="154.0" style="-fx-background-color: #333333;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="63.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Team_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="parametre" accessibleRole="BUTTON" onMouseClicked="#choisirVue" prefHeight="84.0" prefWidth="154.0" style="-fx-background-color: #333333;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="63.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Settings_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children></VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="154.0" prefHeight="110.0" prefWidth="868.0" style="-fx-background-color: #00aa00;">
+         <children>
+            <Label fx:id="label" prefHeight="68.0" prefWidth="407.0" text="Bouton" textFill="#f8f3f3">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="16.0" />
+         </padding>
+      </HBox>
+      <AnchorPane fx:id="espace" layoutX="154.0" layoutY="110.0" prefHeight="591.0" prefWidth="868.0" />
+   </children>
+</AnchorPane>
